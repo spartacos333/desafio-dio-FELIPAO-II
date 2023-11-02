@@ -1,4 +1,3 @@
-//joguei o codigo no chatgpt com as instrucoes para ele relacionar o rank com o balance, agora vou rodar esse codigo e pretendo altera-lo para os padroes do desafio.
 // Função para obter o nome da classificação com base no número de rank
 function getRankName(rank) {
     switch (rank) {
@@ -36,7 +35,7 @@ function winningBalance(victory, defeat) {
     let rank = getRankByBalance(victory - defeat); // Obtém o nível de classificação
     const rankName = getRankName(rank); // Obtém o nome do nível de classificação
     console.log(`The hero has a winning balance of ${victory - defeat} and is at the level of ${rankName}`);
-    const heroName = "Spartacos333";
+    const heroName = "Spartacos333"; // Nome do heroi
     console.log(`The hero ${heroName} is a ${rankName} challenger!!!`);
 }
 
@@ -46,8 +45,8 @@ let defeat = 0;
 // Loop for que simula o aumento de vitórias e derrotas e chama a função winningBalance
 for (let rank = 1;rank <= 10 ; rank++) {
     winningBalance(victory, defeat); // Chama a função com os valores de vitória e derrota
-    victory += 15; // Aumenta o número de vitórias em 7
-    defeat += 3; // Aumenta o número de derrotas em 2
+    victory += 15; // Aumenta o número de vitórias em 15
+    defeat += 3; // Aumenta o número de derrotas em 3
 }
 //Encontrei o porque de o loop parar antes do esperado e fiz chegar ate o ultimo rank.
 //Como comentado eu nomeei o heroi e acredito ter realizado minha ideia inicial de passar uma ideia de progressao do heroi.
